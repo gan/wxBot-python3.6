@@ -1,4 +1,4 @@
-# wxBot [![star this repo](http://github-svg-buttons.herokuapp.com/star.svg?user=liuwons&repo=wxBot&style=flat&background=1081C1)](http://github.com/liuwons/wxBot) [![fork this repo](http://github-svg-buttons.herokuapp.com/fork.svg?user=liuwons&repo=wxBot&style=flat&background=1081C1)](http://github.com/liuwons/wxBot/fork) ![python](https://img.shields.io/badge/python-2.7-ff69b4.svg)
+# wxBot [![star this repo](http://github-svg-buttons.herokuapp.com/star.svg?user=liuwons&repo=wxBot&style=flat&background=1081C1)](http://github.com/liuwons/wxBot) [![fork this repo](http://github-svg-buttons.herokuapp.com/fork.svg?user=liuwons&repo=wxBot&style=flat&background=1081C1)](http://github.com/liuwons/wxBot/fork)
 
 **wxBot** 是用Python包装Web微信协议实现的微信机器人框架。
 
@@ -46,17 +46,17 @@ Web微信协议参考资料：
 
 ## 1 环境与依赖
 
-此版本只能运行于Python 2环境 。
+此版本运行于Python 3环境 。
 
 **wxBot** 用到了Python **requests** , **pypng** , **Pillow** 以及 **pyqrcode** 库。
 
 使用之前需要所依赖的库:
 
 ```bash
-pip install requests
-pip install pyqrcode
-pip install pypng
-pip install Pillow
+pip3 install requests
+pip3 install pyqrcode
+pip3 install pypng
+pip3 install Pillow
 ```
 
 ## 2 快速开发
@@ -70,7 +70,7 @@ pip install Pillow
 `handle_msg_all` 函数用于处理收到的每条消息，而 `schedule` 函数可以做一些任务性的工作(例如不断向好友推送信息或者一些定时任务)。
 
 ```python
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
 import time
@@ -99,10 +99,10 @@ if __name__ == '__main__':
 
 ### 2.2 运行
 
-直接用 `python` 运行代码(如运行测试代码 ***test.py*** ):
+直接用 `python3` 运行代码(如运行测试代码 ***test.py*** ):
 
 ``` python
-python test.py
+python3 test.py
 ```
 
 ### 2.3 登录微信
